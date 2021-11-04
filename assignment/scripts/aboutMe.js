@@ -31,7 +31,7 @@ console.log('I have ' + pets + ' fishes.');
 let friendsPets = 2;
 console.log('my friend have', friendsPets, 'cats.');
 // 11 - Add two pets to your `pets` variable
-pets += 2;  // I just bought another clown fish.
+pets += 2;  // I just bought two clown fish.
 console.log('pets numbers now are:', pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 let allowedPets = 4;
