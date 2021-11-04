@@ -28,10 +28,10 @@ console.log('my favorite food is:', food);
 let pets = 2;
 console.log('I have ' + pets + ' fishes.');
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 2
+let friendsPets = 2;
 console.log('my friend have', friendsPets, 'cats.');
 // 11 - Add two pets to your `pets` variable
-pets += 1;  // I just bought another clown fish.
+pets += 2;  // I just bought another clown fish.
 console.log('pets numbers now are:', pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 let allowedPets = 4;
@@ -52,7 +52,7 @@ if (allowedPets >= pets && friendsPets) {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (luckyNumber = 2) {
+if (luckyNumber === 2) {
   console.log('Roll the dice!');
 }
 // 15 - Write a conditional that console logs "I can have more pets!"
