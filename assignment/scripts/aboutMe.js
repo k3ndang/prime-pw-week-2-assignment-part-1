@@ -19,7 +19,7 @@ console.log('my lucky number is ' + luckyNumber);
 // Refer back to the videos if you need help with this one.
 console.log('My name is', fullName, 'and I think', luckyNumber, 'is a winner!');
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = true;
+let adventurous = false;
 console.log(adventurous);
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'steak';
@@ -34,17 +34,12 @@ console.log('my friend have', friendsPets, 'cats.');
 pets += 2;  // I just bought two clown fish.
 console.log('pets numbers now are:', pets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-let allowedPets = 4;
+const allowedPets = 4;
 console.log('numbers of pets allow in my car:', allowedPets);
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-if (allowedPets >= pets + friendsPets) {
-  console.log('Adventures are great!');
-} else {
-  console.log('How about we stay home?');
-}
 
-if (allowedPets >= pets && friendsPets) {
+if (adventurous === true) {
   console.log('Adventures are great!');
 } else {
   console.log('How about we stay home?');
@@ -52,7 +47,7 @@ if (allowedPets >= pets && friendsPets) {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if (luckyNumber === 2) {
+if (luckyNumber === 2 && adventurous === true) {
   console.log('Roll the dice!');
 }
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -74,11 +69,21 @@ if (pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = pets + friendsPets;
-console.log('Total numbers of pets:', mostPets);
+let mostPets = 5;
+
+if (mostPets >= pets + friendsPets) {
+  console.log('Let go to the park!!');
+} else {
+console.log('I need a bigger car to fit more pets!!');
+}
+
+
+
+console.log(mostPets);
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
-switch (mostPets) {
+switch (mostPets >= pets + friendsPets) {
   case 0:
     console.log('Zero hero!');
     break;
@@ -100,6 +105,9 @@ switch (mostPets) {
   default:
     console.log('Too many pets!');
 }
+
+console.log(mostPets);
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
 console.log((allowedPets >= pets + friendsPets) ? 'Adventures are great!' : 'How about we stay home!');
